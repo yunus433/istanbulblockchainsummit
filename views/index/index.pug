@@ -1,0 +1,39 @@
+extends ../partials/head
+block content
+  .background-wrapper
+    .background-color
+    .background-shapes-wrapper
+      .background-shape-one
+      .background-shape-two-wrapper
+        .background-shape-two-one
+        .background-shape-two-two
+      .background-shape-three
+      .background-shape-four-wrapper
+        .background-shape-four-one
+        .background-shape-four-two
+      .background-shape-five
+      .background-shape-six-wrapper
+        .background-shape-six-one
+        .background-shape-six-two
+      .background-shape-seven
+      .background-shape-eight
+      .background-shape-nine
+  .content-wrapper
+    .time-wrapper
+      .each-time-item
+        .each-time#days= time_left.days < 10 ? `0${time_left.days}` : time_left.days
+        .each-time-title Days
+      .each-time-item
+        .each-time#hours= time_left.hours < 10 ? `0${time_left.hours}` : time_left.hours
+        .each-time-title Hours
+      .each-time-item
+        .each-time#minutes= time_left.minutes < 10 ? `0${time_left.minutes}` : time_left.minutes
+        .each-time-title Minutes
+      .each-time-item
+        .each-time#seconds= time_left.seconds < 10 ? `0${time_left.seconds}` : time_left.seconds
+        .each-time-title Seconds
+    .title We're coming soon! We're working
+    .title hard to give you the best experience.
+    .email-wrapper
+      .email-title Keep in touch with us
+      .email hello@ibs.com
