@@ -6,14 +6,14 @@ function updateTime() {
   const minutes = parseInt((END_TIME - new Date()) / 1000 / 60) % 60;
   const seconds = parseInt((END_TIME - new Date()) / 1000) % 60;
 
-  document.getElementById('days').innerHTML = days < 10 ? `0${days}` : days;
-  document.getElementById('hours').innerHTML = hours < 10 ? `0${hours}` : hours;
-  document.getElementById('minutes').innerHTML = minutes < 10 ? `0${minutes}` : minutes;
-  document.getElementById('seconds').innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+  document.getElementById('days').innerHTML = (days < 10 ? '0' + days : days);
+  document.getElementById('hours').innerHTML = (hours < 10 ? '0' + hours : hours);
+  document.getElementById('minutes').innerHTML = (minutes < 10 ? '0' + minutes : minutes);
+  document.getElementById('seconds').innerHTML = (seconds < 10 ? '0' + seconds : seconds);
 
   setTimeout(() => {
     updateTime();
-  }, 100);
+  }, 300);
 }
 
 window.addEventListener('load', () => {
