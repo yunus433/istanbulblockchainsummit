@@ -1,5 +1,5 @@
 function updateTime() {
-  const END_TIME = parseFloat((new Date(Date.parse('2022-11-14 00:00:00'))).getTime());
+  const END_TIME = 1668380400000;
   const NOW = parseFloat((new Date()).getTime());
 
   const days = parseInt((END_TIME - NOW) / 1000 / 60 / 60 / 24);
