@@ -314,7 +314,7 @@
   background: linear-gradient(267.41deg, rgba(255, 255, 255, 0.074) 0%, rgba(255, 255, 255, 0) 52.08%, rgba(71, 71, 71, 0) 100%), rgba(229, 229, 229, 0.03);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  padding: 40px 60px;
+  padding: 30px 60px;
 }
 .each-link-title {
   z-index: 2;
@@ -326,8 +326,8 @@
 }
 .each-link-background-icon {
   position: absolute;
-  height: 400px;
-  min-height: 400px;
+  height: 110%;
+  min-height: 110%;
   width: auto;
   right: 60px;
   top: -25px;
@@ -372,6 +372,10 @@
   position: absolute;
   margin-left: -100px;
   margin-top: -50px;
+  z-index: 1;
+}
+.phone-title {
+  z-index: 3;
 }
 
 @media only screen and (max-width: 800px) {
@@ -578,5 +582,207 @@
   .cube {
     width: 170px;
     margin-top: -300px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .each-link-wrapper {
+    padding: 20px 60px;
+    height: 380px;
+    min-height: 380px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .each-link-wrapper {
+    height: 300px;
+    min-height: 300px;
+  }
+  .each-link-subtitle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .each-link-wrapper {
+    padding: 15px 30px;
+    height: 250px;
+    min-height: 250px;
+  }
+  .each-link-background-icon {
+    right: 30px;
+  }
+  .each-link-title-mobile-display-none {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .each-link-wrapper {
+    padding: 15px 25px;
+    height: 230px;
+    min-height: 230px;
+  }
+  .each-link-background-icon {
+    right: 25px;
+  }
+  .each-link-button {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .each-link-wrapper {
+    padding: 15px 20px;
+    height: 230px;
+    min-height: 230px;
+  }
+  .each-link-background-icon {
+    right: 20px;
+  }
+  .each-link-button {
+    width: 250px;
+    height: 60px;
+  }
+  .each-link-button-icon {
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .phone-image-wrapper {
+    width: 420px;
+    min-width: 420px;
+    margin-right: calc(100% - 1000px);
+  }
+  .phone {
+    width: 500px;
+    margin-left: -100px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .phone-image-wrapper {
+    width: 520px;
+    min-width: 520px;
+    margin-right: calc(100% - 1000px);
+  }
+  .phone {
+    width: 450px;
+    margin-left: -50px;
+  }
+  .phone-image-text-wrapper {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .phone-image-wrapper {
+    width: 320px;
+    min-width: 320px;
+    margin-right: calc(100% - 850px);
+  }
+  .phone {
+    width: 380px;
+    margin-left: -150px;
+  }
+  .phone-image-text-wrapper {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .phone-wrapper {
+    margin-top: 250px;
+  }
+  .phone-title {
+    width: 500px;
+  }
+  .phone-image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    min-width: 320px;
+    margin-right: unset;
+  }
+  .phone {
+    width: 450px;
+    margin-left: -50px;
+    margin-top: -350px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .phone-title {
+    width: 500px;
+  }
+  .phone-image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    min-width: 320px;
+    margin-right: unset;
+  }
+  .phone {
+    width: 450px;
+    margin-left: -150px;
+    margin-top: -370px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .phone-title {
+    width: 500px;
+  }
+  .phone-image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    min-width: 320px;
+    margin-right: unset;
+  }
+  .phone {
+    width: 450px;
+    margin-left: -150px;
+    margin-top: -370px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .phone-title {
+    width: 500px;
+  }
+  .phone-image-wrapper {
+    width: 320px;
+    min-width: 320px;
+    margin-right: unset;
+  }
+  .phone {
+    width: 450px;
+    margin-left: -150px;
+    margin-top: -370px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .phone-title {
+    width: unset;
+  }
+  .phone-image-wrapper {
+    width: 320px;
+    min-width: 320px;
+    margin-right: unset;
+  }
+  .phone {
+    width: 400px;
+    margin-left: -100px;
+    margin-top: -370px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .phone-title {
+    width: unset;
+  }
+  .phone-image-wrapper {
+    width: 320px;
+    min-width: 320px;
+    margin-right: unset;
+  }
+  .phone {
+    width: 400px;
+    margin-left: -100px;
+    margin-top: -370px;
   }
 }
