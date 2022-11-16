@@ -1,22 +1,44 @@
-function updateTime() {
-  const END_TIME = 1668380400000;
-  const NOW = parseFloat((new Date()).getTime());
+// window.addEventListener('load', () => {
+//   const startPageAnimationWrapper = document.querySelector('.start-page-animation-wrapper');
+//   const eachStartPageAnimation1 = document.querySelector('.each-start-page-animation-1');
+//   const eachStartPageAnimation2 = document.querySelector('.each-start-page-animation-2');
+//   const eachStartPageAnimation3 = document.querySelector('.each-start-page-animation-3');
+//   const eachStartPageAnimation4 = document.querySelector('.each-start-page-animation-4');
+//   const eachStartPageAnimation5 = document.querySelector('.each-start-page-animation-5');
+//   const eachStartPageAnimation6 = document.querySelector('.each-start-page-animation-6');
 
-  const days = parseInt((END_TIME - NOW) / 1000 / 60 / 60 / 24);
-  const hours = parseInt((END_TIME - NOW) / 1000 / 60 / 60) % 24;
-  const minutes = parseInt((END_TIME - NOW) / 1000 / 60) % 60;
-  const seconds = parseInt((END_TIME - NOW) / 1000) % 60;
+//   document.querySelector('.all-wrapper').addEventListener('scroll', event => {
+//     const percentage = (event.target.scrollTop + 180) / window.innerHeight;
 
-  document.getElementById('days').innerHTML = (days < 10 ? ('0' + days) : days);
-  document.getElementById('hours').innerHTML = (hours < 10 ? ('0' + hours) : hours);
-  document.getElementById('minutes').innerHTML = (minutes < 10 ? ('0' + minutes) : minutes);
-  document.getElementById('seconds').innerHTML = (seconds < 10 ? ('0' + seconds) : seconds);
+//     if (percentage > 1) {
+//       eachStartPageAnimation1.style.top = '-250px';
+//       eachStartPageAnimation2.style.top = '-120px';
+//       eachStartPageAnimation2.style.right = '-100px';
+//       eachStartPageAnimation3.style.right = '30px';
+//       eachStartPageAnimation4.style.top = '280px';
+//       eachStartPageAnimation4.style.right = '-30px';
+//       eachStartPageAnimation5.style.right = '10px';
+//       eachStartPageAnimation6.style.top = '500px';
+//       eachStartPageAnimation6.style.right = '0px';
 
-  setTimeout(() => {
-    updateTime();
-  }, 300);
-}
-
-window.addEventListener('load', () => {
-  updateTime();
-});
+//       if (percentage > 1.2) {
+//         if (percentage > 2.2) {
+//           startPageAnimationWrapper.style.display = 'none';
+//         } else {
+//           startPageAnimationWrapper.style.display = 'unset';
+//           startPageAnimationWrapper.style.opacity = `${2.2 - percentage}`;
+//         }
+//       }
+//     } else {
+//       eachStartPageAnimation1.style.top = `-${500 - 250 * percentage}px`;
+//       eachStartPageAnimation2.style.top = `-${80 + 40 * percentage}px`;
+//       eachStartPageAnimation2.style.right = `-${150 - 50 * percentage}px`;
+//       eachStartPageAnimation3.style.right = `${180 - 150 * percentage}px`;
+//       eachStartPageAnimation4.style.top = `${340 - 60 * percentage}px`;
+//       eachStartPageAnimation4.style.right = `-${150 - 120 * percentage}px`;
+//       eachStartPageAnimation5.style.right = `${150 - 140 * percentage}px`;
+//       eachStartPageAnimation6.style.top = `${600 - 100 * percentage}px`;
+//       eachStartPageAnimation6.style.right = `-${20 - 20 * percentage}px`;
+//     }
+//   })
+// })

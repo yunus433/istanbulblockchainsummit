@@ -1,0 +1,117 @@
+.general-text-one {
+  color: var(--text-color);
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.16px;
+}
+.general-text-two {
+  color: var(--text-color);
+  font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.general-text-three {
+  color: var(--text-color);
+  font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+}
+.general-text-four {
+  color: var(--text-color);
+  font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.011em;
+}
+.general-text-five {
+  color: var(--text-color);
+  font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 66px;
+  line-height: 110%;
+  letter-spacing: -0.011em;
+}
+
+@media only screen and (max-width: 1100px) {
+  .general-text-five {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .general-text-five {
+    font-size: 52px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .general-text-one {
+    font-size: 14px;
+  }
+  .general-text-two {
+    font-size: 15px;
+  }
+  .general-text-three {
+    font-size: 17px;
+  }
+  .general-text-four {
+    font-size: 19px;
+  }
+  .general-text-five {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .general-text-one {
+    font-size: 14px;
+  }
+  .general-text-two {
+    font-size: 15px;
+  }
+  .general-text-three {
+    font-size: 17px;
+  }
+  .general-text-four {
+    font-size: 18px;
+  }
+  .general-text-five {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .general-text-one {
+    font-size: 14px;
+  }
+  .general-text-two {
+    font-size: 14px;
+  }
+  .general-text-three {
+    font-size: 16px;
+  }
+  .general-text-four {
+    font-size: 17px;
+  }
+  .general-text-five {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .general-text-one {
+    font-size: 14px;
+  }
+  .general-text-two {
+    font-size: 14px;
+  }
+  .general-text-three {
+    font-size: 15px;
+  }
+  .general-text-four {
+    font-size: 16px;
+  }
+  .general-text-five {
+    font-size: 50px;
+  }
+}

@@ -6,7 +6,7 @@ module.exports = (req, res) => {
     title: 'Scale the Future of Blockchain',
     includes: {
       external: {
-        css: ['general', 'page'],
+        css: ['general', 'header', 'page', 'text'],
         js: ['page']
       },
       meta: {
