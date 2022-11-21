@@ -29,6 +29,7 @@ if (cluster.isMaster) {
   const MAX_SERVER_PARAMETER_LIMIT = 50000;
 
   const indexRouteController = require('./routes/indexRoute');
+  const manifestRouteController = require('./routes/manifestRoute');
 
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'pug');
@@ -52,6 +53,7 @@ if (cluster.isMaster) {
   });
 
   app.use('/', indexRouteController);
+  app.use('/manifest', manifestRouteController);
 
   server.listen(PORT, () => {
     console.log(`Server is on port ${PORT} as Worker ${cluster.worker.id} running @ process ${cluster.worker.process.pid}`);

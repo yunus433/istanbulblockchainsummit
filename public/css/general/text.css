@@ -1,3 +1,7 @@
+.general-text-bold {
+  font-weight: 700 !important;
+}
+
 .general-text-one {
   color: var(--text-color);
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
@@ -36,6 +40,14 @@
   line-height: 110%;
   letter-spacing: -0.011em;
 }
+.general-text-six {
+  color: var(--text-color);
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.011em;
+}
 
 @media only screen and (max-width: 1100px) {
   .general-text-five {
@@ -51,7 +63,7 @@
   .general-text-one {
     font-size: 14px;
   }
-  .general-text-two {
+  .general-text-two, .general-text-six {
     font-size: 15px;
   }
   .general-text-three {
@@ -68,7 +80,7 @@
   .general-text-one {
     font-size: 14px;
   }
-  .general-text-two {
+  .general-text-two, .general-text-six {
     font-size: 15px;
   }
   .general-text-three {
@@ -85,7 +97,7 @@
   .general-text-one {
     font-size: 14px;
   }
-  .general-text-two {
+  .general-text-two, .general-text-six {
     font-size: 14px;
   }
   .general-text-three {
@@ -102,7 +114,7 @@
   .general-text-one {
     font-size: 14px;
   }
-  .general-text-two {
+  .general-text-two, .general-text-six {
     font-size: 14px;
   }
   .general-text-three {

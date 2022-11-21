@@ -1,0 +1,174 @@
+:root {
+  --manifest-space-height: 30px;
+  --manifest-header-horizontal-padding: 60px;
+  --manifest-content-horizontal-padding: 60px;
+  --manifest-header-max-width: 1340px;
+  --manifest-content-max-width: 1144px;
+  --manifest-header-text-width: 600px;
+  --manifest-header-image-width: 500px;
+}
+
+.manifest-space {
+  display: block;
+  width: 1px;
+  min-width: 1px;
+  height: var(--manifest-space-height);
+  min-height: var(--manifest-space-height);
+}
+
+.manifest-wrapper {
+  width: 100vw;
+  height: fit-content;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.manifest-header-wrapper {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 calc(max(var(--manifest-header-horizontal-padding), (100vw - var(--manifest-header-max-width)) / 2));
+}
+.manifest-header-text-wrapper {
+  height: fit-content;
+  min-height: fit-content;
+  width: var(--manifest-header-text-width);
+  min-width: var(--manifest-header-text-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.manifest-title, .manifest-quote {
+  width: 100%;
+  text-align: left;
+}
+.manifest-header-image-wrapper {
+  height: calc(var(--manifest-header-image-width) * 245 / 300);
+  min-height: calc(var(--manifest-header-image-width) * 245 / 300);
+  width: var(--manifest-header-image-width);
+  min-width: var(--manifest-header-image-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.manifest-scroll {
+  width: 100%;
+  height: auto;
+}
+
+.manifest-content-wrapper {
+  width: 100vw;
+  height: fit-content;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 calc(max(var(--manifest-content-horizontal-padding), (100vw - var(--manifest-content-max-width)) / 2));
+  padding-bottom: 100px;
+}
+.each-manifest-content-text {
+  text-align: center;
+  font-weight: 300 !important;
+}
+.each-manifest-content-line {
+  height: 2px;
+  width: 100%;
+  min-width: 100%;
+  background: linear-gradient(to right, rgba(244, 244, 244, 0), rgba(22, 22, 22, 1), rgba(244, 244, 244, 0));
+}
+
+@media only screen and (max-width: 700px) {
+  :root {
+    --manifest-header-horizontal-padding: 40px;
+    --manifest-content-horizontal-padding: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --manifest-space-height: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  :root {
+    --manifest-space-height: 15px;
+    --manifest-header-horizontal-padding: 20px;
+    --manifest-content-horizontal-padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  :root {
+    --manifest-header-text-width: 500px;
+    --manifest-header-image-width: 500px;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  :root {
+    --manifest-header-text-width: 450px;
+    --manifest-header-image-width: 450px;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  :root {
+    --manifest-header-text-width: 400px;
+    --manifest-header-image-width: 400px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  :root {
+    --manifest-header-text-width: 500px;
+    --manifest-header-image-width: 400px;
+  }
+  .manifest-header-wrapper {
+    flex-direction: column-reverse;
+    align-items: unset;
+    justify-content: center;
+  }
+  .manifest-header-text-wrapper {
+    margin-right: auto;
+  }
+  .manifest-header-image-wrapper {
+    margin-left: auto;
+    margin-bottom: -100px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  :root {
+    --manifest-header-text-width: 500px;
+    --manifest-header-image-width: 400px;
+  }
+  .manifest-header-image-wrapper {
+    margin-bottom: var(--manifest-space-height);
+  }
+}
+@media only screen and (max-width: 500px) {
+  :root {
+    --manifest-header-text-width: 350px;
+    --manifest-header-image-width: 350px;
+  }
+  .manifest-header-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .manifest-header-text-wrapper {
+    margin-right: 0;
+  }
+  .manifest-title, .manifest-quote {
+    text-align: center;
+  }
+  .manifest-header-image-wrapper {
+    margin-left: 0;
+    margin-bottom: var(--manifest-space-height);
+  }
+}
+@media only screen and (max-width: 400px) {
+  :root {
+    --manifest-header-text-width: 250px;
+    --manifest-header-image-width: 250px;
+  }
+}

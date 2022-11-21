@@ -82,13 +82,8 @@
 .each-start-page-animation {
   height: auto;
   position: absolute;
-  mix-blend-mode: normal;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-.each-start-page-animation-border {
-  height: auto;
-  position: absolute;
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
 }
 /* .each-start-page-animation-1 {
   z-index: 7;
