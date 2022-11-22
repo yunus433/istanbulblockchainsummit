@@ -255,7 +255,6 @@
   height: auto;
   animation: clockShape1Animation 8s linear infinite;
   -webkit-animation: clockShape1Animation 8s linear infinite;
-  z-index: 10;
 }
 @keyframes clockShape1Animation {
   0% {
@@ -603,10 +602,10 @@
 .phone-light-2 {
   z-index: 4;
   position: absolute;
-  margin-top: -14px;
-  margin-left: -2px;
+  margin-top: -18px;
+  margin-left: -4px;
   width: 30px;
-  height: 40px;
+  height: 50px;
   border-radius: 100%;
   background: radial-gradient(90.28% 70.57% at 49.96% 84.39%, #FF004D 0%, rgba(112, 0, 0, 0) 100%);
   filter: blur(6px);
@@ -617,10 +616,10 @@
 .phone-light-3 {
   z-index: 4;
   position: absolute;
-  margin-top: -37px;
-  margin-left: -7px;
-  width: 45px;
-  height: 75px;
+  margin-top: -48px;
+  margin-left: -2px;
+  width: 35px;
+  height: 80px;
   border-radius: 100%;
   background: radial-gradient(60.25% 72.51% at 53.62% 71.33%, #FF004D 0%, rgba(112, 0, 0, 0) 100%);
   filter: blur(27px);
@@ -742,6 +741,9 @@
     height: 80px;
     min-height: 80px;
   }
+  .extra-content-space-for-desktop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -803,6 +805,47 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .trailer-background {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+  }
+  @keyframes trailerBackgroundAnimation {
+    0% {
+      opacity: 1;
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
+    }
+    50% {
+      opacity: 0.5;
+      filter: blur(15px);
+      -webkit-filter: blur(15px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
+    }
+  }
+  @-webkit-keyframes trailerBackgroundAnimation {
+    0% {
+      opacity: 1;
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
+    }
+    50% {
+      opacity: 0.5;
+      filter: blur(15px);
+      -webkit-filter: blur(15px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
+    }
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .clock-image-wrapper {
     width: 450px;
@@ -812,6 +855,14 @@
   }
   .clock {
     width: 250px;
+  }
+  .clock-shape-2 {
+    bottom: 50px;
+    left: 50px;
+  }
+  .clock-shape-3 {
+    bottom: 250px;
+    left: 350px;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -824,6 +875,32 @@
   .clock {
     width: 250px;
   }
+  .clock-shape-1 {
+    bottom: 310px;
+    left: 20px;
+  }
+  .clock-shape-2 {
+    bottom: 20px;
+    left: 20px;
+  }
+  .clock-shape-3 {
+    bottom: 240px;
+    left: 290px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .clock-shape-1 {
+    bottom: 290px;
+    left: 20px;
+  }
+  .clock-shape-2 {
+    bottom: 20px;
+    left: 20px;
+  }
+  .clock-shape-3 {
+    bottom: 250px;
+    left: 275px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .clock-image-wrapper {
@@ -834,6 +911,24 @@
   }
   .clock {
     width: 200px;
+  }
+  .clock-shape-1 {
+    bottom: 290px;
+    left: -40px;
+  }
+  .clock-shape-3 {
+    bottom: 300px;
+    left: 520px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .clock-shape-1 {
+    bottom: 270px;
+    left: -20px;
+  }
+  .clock-shape-2 {
+    bottom: 20px;
+    left: 10px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -852,9 +947,48 @@
   .clock {
     width: 220px;
   }
-
+  .clock-shape-1 {
+    bottom: 250px;
+    left: -30px;
+  }
+  .clock-shape-2 {
+    bottom: -10px;
+    left: -10px;
+  }
+  .clock-shape-3 {
+    bottom: 250px;
+    left: -100px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .clock-shape-1 {
+    bottom: 270px;
+    left: 170px;
+  }
+  .clock-shape-2 {
+    bottom: -10px;
+    left: -10px;
+  }
+  .clock-shape-3 {
+    bottom: 200px;
+    left: -50px;
+  }
 }
 
+@media only screen and (max-width: 1200px) {
+  .small-cube {
+    margin-left: 50px;
+    margin-top: -90px;
+  }
+  .cube-shape-1 {
+    bottom: -10px;
+    right: 50px;
+  }
+  .cube-shape-2 {
+    bottom: 170px;
+    right: 450px;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .cube-image-wrapper {
     width: 420px;
@@ -864,6 +998,18 @@
   .cube {
     width: 300px;
     margin-left: -50px;
+  }
+  .small-cube {
+    margin-left: 100px;
+    margin-top: -90px;
+  }
+  .cube-shape-1 {
+    bottom: -50px;
+    right: 50px;
+  }
+  .cube-shape-2 {
+    bottom: 100px;
+    right: 250px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -894,6 +1040,18 @@
     margin-left: -50px;
     margin-top: -200px;
   }
+  .small-cube {
+    margin-left: 350px;
+    margin-top: -50px;
+  }
+  .cube-shape-1 {
+    bottom: -50px;
+    right: 50px;
+  }
+  .cube-shape-2 {
+    bottom: 190px;
+    right: 50px;
+  }
 }
 @media only screen and (max-width: 700px) {
   .cube-title {
@@ -918,6 +1076,18 @@
   .cube-image-text-wrapper {
     margin-top: 50px;
   }
+  .small-cube {
+    margin-left: calc(100vw - 2 * var(--content-horizontal-padding) - 150px);
+    margin-top: -50px;
+  }
+  .cube-shape-1 {
+    bottom: -50px;
+    right: 50px;
+  }
+  .cube-shape-2 {
+    bottom: 450px;
+    right: 150px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .cube {
@@ -928,10 +1098,35 @@
     margin-top: 30px;
   }
 }
+@media only screen and (max-width: 450px) {
+  .cube {
+    width: 230px;
+    margin-top: -350px;
+  }
+  .cube-image-text-wrapper {
+    margin-top: 30px;
+  }
+  .small-cube {
+    margin-left: calc(100vw - 2 * var(--content-horizontal-padding) - 90px);
+    margin-top: -50px;
+  }
+  .cube-shape-1 {
+    bottom: 215px;
+    right: 270px;
+  }
+  .cube-shape-2 {
+    bottom: 550px;
+    right: 50px;
+  }
+}
 @media only screen and (max-width: 400px) {
   .cube {
     width: 170px;
     margin-top: -300px;
+  }
+  .cube-shape-1 {
+    bottom: 240px;
+    right: 250px;
   }
 }
 
@@ -1005,6 +1200,10 @@
     width: 500px;
     margin-left: -100px;
   }
+  .phone-light-wrapper {
+    margin-left: 215px;
+    margin-top: 35px;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .phone-image-wrapper {
@@ -1019,6 +1218,10 @@
   .phone-image-text-wrapper {
     margin-top: 50px;
   }
+  .phone-light-wrapper {
+    margin-left: 232px;
+    margin-top: 24px;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .phone-image-wrapper {
@@ -1032,6 +1235,10 @@
   }
   .phone-image-text-wrapper {
     margin-top: 10px;
+  }
+  .phone-light-wrapper {
+    margin-left: 86px;
+    margin-top: 13px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -1054,6 +1261,19 @@
     margin-left: -50px;
     margin-top: -350px;
   }
+  .phone-light-wrapper {
+    margin-left: calc(100% - 89px);
+    margin-top: -272px;
+  }
+  .phone-shape-1 {
+    bottom: 250px;
+    right: 100%;
+    left: -300px;
+  }
+  .phone-shape-2 {
+    bottom: -150px;
+    right: 0px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .phone-title {
@@ -1071,6 +1291,10 @@
     width: 450px;
     margin-left: -150px;
     margin-top: -370px;
+  }
+  .phone-light-wrapper {
+    margin-left: calc(100% - 189px);
+    margin-top: -292px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1090,6 +1314,14 @@
     margin-left: -150px;
     margin-top: -370px;
   }
+  .phone-shape-1 {
+    bottom: 250px;
+    left: -200px;
+  }
+  .phone-shape-2 {
+    bottom: -130px;
+    right: 30px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .phone-title {
@@ -1104,6 +1336,10 @@
     width: 450px;
     margin-left: -150px;
     margin-top: -370px;
+  }
+  .phone-shape-1 {
+    bottom: 130px;
+    left: -95px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -1120,6 +1356,23 @@
     margin-left: -100px;
     margin-top: -370px;
   }
+  .phone-light-wrapper {
+    margin-left: calc(100% - 172px);
+    margin-top: -302px;
+  }
+  .phone-light-3 {
+    margin-top: -47px;
+    margin-left: -2px;
+  }
+  .phone-shape-1 {
+    bottom: 250px;
+    left: -75px;
+    z-index: -1;
+  }
+  .phone-shape-2 {
+    bottom: -130px;
+    right: 50px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .phone-title {
@@ -1134,5 +1387,13 @@
     width: 400px;
     margin-left: -100px;
     margin-top: -370px;
+  }
+  .phone-shape-1 {
+    bottom: 290px;
+    left: -15px;
+  }
+  .phone-shape-2 {
+    bottom: -180px;
+    right: 50px;
   }
 }
